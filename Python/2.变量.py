@@ -39,4 +39,24 @@ print(test)
 ['False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
 '''
 
+#命名要有意义
+#用中文命名变量语法上允许，但严禁使用
+
+
+###变量的交换
+#通用的交换写法
+a = 3
+b = 4
+var = a
+a = b
+b = var
+print(a,b)
+
+#python的写法
+a = 3
+b = 4
+a,b = b,a
+print(a,b)
+
+
 
