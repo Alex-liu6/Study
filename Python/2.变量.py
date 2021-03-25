@@ -34,8 +34,9 @@ print(a,b)
 import keyword
 test = keyword.kwlist   #定义变量test，赋予这个值，可以打印出所有的关键字，当然注意的是还不至这些关键字
 print(test)
-
+'''
+返回如下值，皆为关键字
 ['False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
-
+'''
 
 
