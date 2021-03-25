@@ -3,7 +3,7 @@ beizi = "水"
 print（beizi）
 beizi = "茶"
 print（baizi）
-
+#杯子加了水就是水杯；杯子加了茶就是茶杯；杯子就是变量！
 
 ###变量的声明
 #方法一
