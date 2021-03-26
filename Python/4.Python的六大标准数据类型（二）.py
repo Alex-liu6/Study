@@ -18,7 +18,7 @@
 用引号引起来的数据就是字符串
 '''
 
-# （1）单引号
+## 单引号
 str_var = 'hello world !'
 print(str_var,type(str_var))
 '''
@@ -26,7 +26,77 @@ print(str_var,type(str_var))
 hello world ！ <class 'str'>
 '''
 
-# （2）双引号
+## 双引号
+str_var = "good good study, day day up"
+print(str_var,type(str_var))
+'''
+运行结果是：
+good good study, day day up <class 'str'>
+'''
+
+str_var = "good good study, \nday day up"
+print(str_var,type(str_var))
+'''
+运行结果是：
+good good study,
+day day up <class 'str'>
+'''
+
+str_var = "good good study, \tday day \r\nup"
+print(str_var,type(str_var))
+'''
+运行结果是：
+good good study,  day day          day字符前会有一个明显的缩进字符
+up <class 'str'>
+'''
+
+str_var = "good good study, \rday day up"
+print(str_var,type(str_var))
+'''
+运行结果是：
+day day up <class 'str'>
+'''
+
+str_var = "good good "study", day day up"
+print(str_var,type(str_var))
+'''
+运行结果是：
+error
+'''
+#需要做如下修改
+str_var = "good good \"study\", day day up"
+print(str_var,type(str_var))
+'''
+运行结果是：
+good good "study", day day up <class 'str'>
+'''
+
+
+## 三引号      支持跨行，无需对单双引号重新转义
+str_var = """good good study,
+day day up """
+print(str_var,type(str_var))
+'''
+运行结果是：
+good good study,
+day day up <class 'str'>
+'''
+
+str_var = '''good good "study",
+day 'day' up '''
+print(str_var,type(str_var))
+'''
+运行结果是：
+good good "study",
+day 'day' up <class 'str'>
+'''
+
+
+
+
+
+
+
 
 
 
