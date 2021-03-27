@@ -93,13 +93,74 @@ day 'day' up <class 'str'>
 
 
 
+### 元字符串      原型化输出字符串，让转义字符失效
+str_var = r"good good study, \rday day up"
+print(str_var)
+'''
+运行结果是：
+"good good study, /rday day up"
+'''
 
 
 
 
 
+### 字符串的格式化
+# %d   %f   %s    
+#语法：  "字符串%d"   % (值)
+
+## %d 整形占位符
+str_var = "I have %d sports cars" % (10)
+print(str_var)
+'''
+运行结果是：
+I have 10 sports cars
+'''
+## %2d 默认数字居右
+
+## %-2d 默认数字居左
 
 
 
+## %f 浮点型占位符      默认小数点后面保留6位
+str_var = "I spend %f dollars a day" % (9.99)
+print(str_var)
+'''
+运行结果是：
+I spend 9.990000 dollers a day
+'''
+# %.1f  存在四舍五入
+str_var = "I spend %.1f dollars a day" % (9.99)
+print(str_var)
+'''
+运行结果是：
+I spend 10.0 dollars a day
+'''
+# %.3f  保留小数点后3位
+str_var = "I spend %.3f dollars a day" % (9.99)
+print(str_var)
+'''
+运行结果是：
+I spend 9.990 dollars a day
+'''
 
+
+
+## %s 字符串占位符
+str_var = "%S" % ("good good study day day up")
+print(str_var)
+'''
+输出结果是：
+good good study day day up
+'''
+
+
+
+#综合案例
+str_var = "I am a network engineer, %d yuan a month, spend %.1f yuan a day, life is %s" % (100000,9.99,"very comfortable")
+print(str_var)
+'''
+输出结果是：
+I am a network engineer, 100000 yuan a month, spend 10.0 yuan a day, life is very comfortable
+'''
 
