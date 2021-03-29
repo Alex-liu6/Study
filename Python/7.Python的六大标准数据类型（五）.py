@@ -8,6 +8,7 @@
 
 # 定义一个空集合
 set_var = set()      #{ } 不是集合    而是一个字典
+print(set_var,type(set_var))
 '''
 运行结果是：
 set() <class 'set'>
