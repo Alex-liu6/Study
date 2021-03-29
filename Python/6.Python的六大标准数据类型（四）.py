@@ -10,7 +10,7 @@ tuple_var = ()
 print(tuple_var,type(tuple_var))
 '''
 运行结果是：
-((), <class 'tuple'>)
+() <class 'tuple'>
 '''
 
 # 
@@ -18,21 +18,21 @@ tuple_var = (1,2,3,4)
 print(tuple_var,type(tuple_var))
 '''
 运行结果是：
-((1,2,3,4), <class 'tuple'>)
+(1,2,3,4) <class 'tuple'>
 '''
 
 tuple_var = (1,)
 print(tuple_var,type(tuple_var))
 '''
 运行结果是：
-((1,), <class 'tuple'>)
+(1,) <class 'tuple'>
 '''
 
 tuple_var = 1,2,3
 print(tuple_var,type(tuple_var))
 '''
 运行结果是“
-((1,2,3), <class 'tuple'>)
+(1,2,3) <class 'tuple'>
 '''
 
 ## 获取最后一个值
