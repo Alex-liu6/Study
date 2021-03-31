@@ -109,10 +109,22 @@ print(example,type(example))
 '''
 
 # （3）外面是集合，里面是元组或字符串
-var1 = {("a",1),("b",2),"c3"}
+var1 = {("a",1),("b",2),"c3"}          #必须放入不可变数据，即可哈希
 alex = dict(var1)
 print(alex)
 '''
 运行结果是：
+{'a' : 1, 'c' : 3, 'b' : 2}
+'''
+
+
 
 '''
+int()   float()   bool()   comp[lex()
+str()   list()   tuple()   set()   dict()
+这些函数在进行强转时，都默认转化成当前的数据类型
+用这样的方式也可以初始化一个值
+'''
+alex = int()
+alex = list()
+print(alex)
