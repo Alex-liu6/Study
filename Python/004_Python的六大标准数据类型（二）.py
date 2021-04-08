@@ -147,7 +147,7 @@ I spend 9.990 dollars a day
 
 
 ## %s 字符串占位符
-str_var = "%S" % ("good good study day day up")
+str_var = "%s" % ("good good study day day up")
 print(str_var)
 '''
 输出结果是：
